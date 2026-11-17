@@ -1,0 +1,10 @@
+{
+  "default_action": "deny",
+  "auto_block": true,
+  "block": { "threshold": 5, "window_s": 10, "duration_s": 30 },
+  "rules": [
+    { "src": "any",      "dst": "10.0.0.4", "dport": 5000, "action": "allow" },
+    { "src": "10.0.0.1", "dst": "10.0.0.4", "dport": 6000, "action": "allow" },
+    { "src": "any",      "dst": "10.0.0.4", "dport": 6000, "action": "deny"  }
+  ]
+}

@@ -1,0 +1,4 @@
+# Direct dependencies for the legacy Python 3.8 lab setup in README.md.
+# Bootstrap pip/setuptools first. Install Mininet/OVS as Linux system packages.
+ryu==4.34
+eventlet==0.30.2
